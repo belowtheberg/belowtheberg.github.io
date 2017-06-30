@@ -43,10 +43,30 @@ button.main {
 header {
   padding-top: 82px;
   background: red;
-  height: 715px;
+  min-height: 715px;
   background: url('../img/base.svg');
   background-repeat: no-repeat;
   background-position: bottom;
+}
+@media (max-width: 993px) {
+  .background {
+    display: none;
+  }
+  #main-img {
+    max-width: 50%;
+  }
+  .main-text {
+    text-align: center;
+  }
+  .sub-title {
+    margin: 32px 0;
+  }
+  header {
+    padding-top: 0;
+  }
+  h1 {
+    text-align: center;
+  }
 }
 /*header:after {
   content: " ";
