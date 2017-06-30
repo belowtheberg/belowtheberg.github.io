@@ -22,7 +22,8 @@ body {
   background: linear-gradient(0deg,  #050631 0%, #03234F 100%);
 }
 .title {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   font-size: 70px;
   font-weight: bold;
   color: #fff;
@@ -44,7 +45,7 @@ header {
   padding-top: 82px;
   background: red;
   min-height: 715px;
-  background: url('../img/base.svg');
+  background: url('../img/base-gray.svg');
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -68,25 +69,19 @@ header {
     text-align: center;
   }
 }
-/*header:after {
-  content: " ";
-  width: 100%;
-  height: 150px;
-  background: #fff;
-  transform: skewY(3deg);
-  display: block;
-  position: absolute;
-  bottom: 150px;
-  z-index: 1;
-  left: 0;
-}*/
-#info {
-  color: #D3DBE9;
-  position: absolute;
-  top: 420px;
-  max-width: 600px;
-  font-size: 14px;
-  line-height: 1.6em;
+@media (min-width: 993px) {
+  .episodes {
+    position: relative;
+    z-index: 1;
+    top: -250px;
+  }
+  .episodes h1 {
+    text-align: center;
+    color: #fff;
+  }
+  section#first {
+    height: 20px;
+  }
 }
 section {
   padding: 60px 0;
@@ -101,17 +96,16 @@ section.white {
 section.gray {
   background: #F6F9FC;
 }
-section#first {
-  /*margin-top: 600px;*/
-}
+
 .episode {
   margin: 16px;
   padding: 16px;
-  background: #F6F9FC;
+  background: #fff;
   text-align: center;
   min-height: 100px;
   color: #050631;
   box-shadow: 0 2px 4px rgba(50,50,93,.1);
+  height: 170px;
 }
 h1 {
   margin: 0;
@@ -125,4 +119,25 @@ footer {
 .icons i {
   color: #fff;
   padding-right: 32px;
+}
+.large {
+  font-size: 2em;
+  font-weight: bold;
+}
+#nl {
+  position: absolute;
+  top: -150px;
+  left: -50px;
+  width: 110%;
+}
+#info:before {
+  content: " ";
+  width: 100%;
+  height: 160px;
+  background: #F6F9FC;
+  transform: skewY(-2deg);
+  display: block;
+  position: relative;
+  z-index: 0;
+  top: -100px;
 }
