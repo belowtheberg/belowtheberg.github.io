@@ -40,6 +40,14 @@ button.main {
   font-size: 15px;
   border-radius: 4px;
 }
+header {
+  padding-top: 82px;
+  background: red;
+  height: 715px;
+  background: url('../img/base.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 /*header:after {
   content: " ";
   width: 100%;
@@ -60,7 +68,7 @@ button.main {
   font-size: 14px;
   line-height: 1.6em;
 }
-section.light-mode {
+section {
   padding: 60px 0;
   color: #050631;
 }
@@ -83,4 +91,18 @@ section#first {
   text-align: center;
   min-height: 100px;
   color: #050631;
+  box-shadow: 0 2px 4px rgba(50,50,93,.1);
+}
+h1 {
+  margin: 0;
+}
+footer {
+  padding: 32px 0px;
+}
+.text-center {
+  text-align: center;
+}
+.icons i {
+  color: #fff;
+  padding-right: 32px;
 }
