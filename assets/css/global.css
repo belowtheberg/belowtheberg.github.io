@@ -1,12 +1,13 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background: #fff;
+  background: #F8F8FB;
   overflow-x: hidden;
 }
 header {
-  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+  /*background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);*/
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 0;
   color: #fff;
 }
 header h1 {
@@ -24,10 +25,10 @@ header .icons {
   margin-right: 30px;
   color: #fff;
 }
-header::after {
+/*header::after {
   background: url('../img/base.svg');
   width: 110%;
-  height: 100px;
+  min-height: 100px;
   position: relative;
   bottom: -1px;
   left: -5px;
@@ -35,6 +36,19 @@ header::after {
   display: block;
   background-position: bottom left;
   background-repeat: no-repeat;
+  background-size: contain;
+}*/
+header:after {
+  content: ' ';
+   width: 0;
+   height: 0;
+   border-top: 0px solid transparent;
+   border-right: 100vw solid transparent;
+   border-left: 0px solid transparent;
+   border-bottom: 80px solid #F8F8FB;
+   position: relative;
+   bottom: 28px;
+   left: 0px;
 }
 @media (max-width: 768px) {
   header {
