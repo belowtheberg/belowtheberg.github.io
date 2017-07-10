@@ -1,143 +1,34 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background: #050631;
+  background: #fff;
   overflow-x: hidden;
 }
-.background:before {
-  content: ' ';
-  width: 100%;
-  height: 335px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-}
-.background:after {
-  content: ' ';
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 335px;
-  left: 0;
-  background: linear-gradient(0deg,  #050631 0%, #03234F 100%);
-}
-.title {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  font-size: 70px;
-  font-weight: bold;
-  color: #fff;
-}
-.sub-title {
-  font-size: 24px;
-  color: #fff;
-  margin-top: -10px;
-}
-button.main {
-  padding: 12px 20px;
-  background: rgba(0,0,0,0);
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 4px;
-}
 header {
-  padding-top: 82px;
-  background: red;
-  min-height: 715px;
-  background: url('../img/base-gray.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-@media (max-width: 993px) {
-  .background {
-    display: none;
-  }
-  #main-img {
-    max-width: 50%;
-  }
-  .main-text {
-    text-align: center;
-  }
-  .sub-title {
-    margin: 32px 0;
-  }
-  header {
-    padding-top: 0;
-  }
-  h1 {
-    text-align: center;
-  }
-}
-@media (min-width: 993px) {
-  .episodes {
-    position: relative;
-    z-index: 1;
-    top: -250px;
-  }
-  .episodes h1 {
-    text-align: center;
-    color: #fff;
-  }
-  section#first {
-    height: 20px;
-  }
-}
-section {
-  padding: 60px 0;
-  color: #050631;
-}
-section.dark-mode {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  width: 100%;
+  padding: 50px 0;
   color: #fff;
 }
-section.white {
-  background: #fff;
-}
-section.gray {
-  background: #F6F9FC;
-}
-
-.episode {
-  margin: 16px;
-  padding: 16px;
-  background: #fff;
-  text-align: center;
-  min-height: 100px;
-  color: #050631;
-  box-shadow: 0 2px 4px rgba(50,50,93,.1);
-  height: 170px;
-}
-h1 {
+header h1 {
+  font-size: 50px;
+  padding-top: 150px;
   margin: 0;
 }
-footer {
-  padding: 32px 0px;
+header h2 {
+  margin: 0;
 }
-.text-center {
-  text-align: center;
+header .icons {
+  margin-top: 20px;
 }
 .icons i {
-  color: #fff;
-  padding-right: 32px;
+  margin-right: 30px;
 }
-.large {
-  font-size: 2em;
-  font-weight: bold;
-}
-#nl {
-  position: absolute;
-  top: -150px;
-  left: -50px;
+header:after {
+  background: url('../img/base.svg');
   width: 110%;
-}
-#info:before {
-  content: " ";
-  width: 100%;
-  height: 160px;
-  background: #F6F9FC;
-  transform: skewY(-2deg);
-  display: block;
-  position: relative;
-  z-index: 0;
-  top: -100px;
+  height: 100px;
+  /*background: red;*/
+  position: absolute;
+  left: 0;
+  content: ' ';
 }
