@@ -4,9 +4,9 @@ body {
   overflow-x: hidden;
 }
 header {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
   width: 100%;
-  padding: 50px 0;
+  padding-top: 50px;
   color: #fff;
 }
 header h1 {
@@ -22,13 +22,31 @@ header .icons {
 }
 .icons i {
   margin-right: 30px;
+  color: #fff;
 }
-header:after {
+header::after {
   background: url('../img/base.svg');
   width: 110%;
   height: 100px;
-  /*background: red;*/
-  position: absolute;
-  left: 0;
+  position: relative;
+  bottom: -1px;
+  left: -5px;
   content: ' ';
+  display: block;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header h1 {
+    padding-top: 20px;
+  }
+  header .icons {
+    margin-bottom: 20px;
+  }
+  .icons i {
+    margin: 0 15px;
+  }
 }
