@@ -101,6 +101,12 @@ section.white {
 .spacing-lg {
   margin-top: 120px;
 }
+.padding-sm {
+  padding-top: 32px
+}
+.padding-md {
+  padding-top: 64px
+}
 .spacing-sm {
   margin-top: 30px;
 }
@@ -113,11 +119,21 @@ a:hover {
   }
   header h1 {
     padding-top: 20px;
+    font-size: 45px;
+  }
+  header h2 {
+    font-weight: normal;
   }
   header .icons {
     margin-bottom: 20px;
   }
   .icons i {
     margin: 0 15px;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  header:after {
+    display: none;
   }
 }
