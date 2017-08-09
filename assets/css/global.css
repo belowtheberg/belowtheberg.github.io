@@ -118,6 +118,11 @@ section.white {
 }
 a:hover {
   text-decoration: none;
+  color: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   header {
