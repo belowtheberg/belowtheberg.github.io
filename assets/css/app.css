@@ -18,6 +18,7 @@ button {
 }
 button:hover {
   background: #2576ba;
+  cursor: pointer;
 }
 .max-width {
   max-width: 993px;
