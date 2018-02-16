@@ -2,6 +2,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
 }
 .flex {display: flex}
+.col-flex {display: flex}
 .v-center {align-items: center;}
 .h-center {justify-content: center;}
 h1 { font-size: 45px; }
@@ -78,4 +79,20 @@ p {
 .col-12 {
   width: calc(100% / 12);
   box-sizing: border-box;
+}
+@media (max-width: 590px) {
+  .col-8 {
+    width: 100%;
+  }
+  .col-flex {
+    display: block;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 435px) {
+  h1 {
+    font-size: 30px;
+  }
 }
