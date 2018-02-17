@@ -120,6 +120,17 @@ input[type="submit"]:hover {
   transform: translateY(-2px);
   transition: .2s;
 }
+textarea {
+  width: 100%;
+  resize: none;
+  height: 150px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
 @media (max-width: 590px) {
   .col-8 {
     width: 100%;
