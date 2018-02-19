@@ -15,15 +15,19 @@ button {
   padding: 18px 30px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 4px;
   border: none;
   background: #34A1FC;
   color: #ffffff;
-  margin-left: 10px
+  margin-left: 10px;
+  box-shadow: 5px 5px 0px black;
+  transition: .2s;
 }
 button:hover {
   background: #2576ba;
   cursor: pointer;
+  box-shadow: 7px 7px 0px black;
+  transition: .2s;
+  transform: translateY(-2px);
 }
 #soundcloud {
   background: #FF5500;
@@ -48,10 +52,10 @@ p {
   line-height: 1.6em;
 }
 .dark {
-  background: #333;
-  color: #fff;
-  padding: 50px 0;
-  margin: 50px 0;
+  background: #D6DBEA;
+  color: #394767;
+  padding: 75px 0;
+  margin: 75px 0;
 }
 /* COLUMNS */
 .col-1 {
@@ -107,34 +111,35 @@ input[type="text"],input[type="email"] {
   box-sizing: border-box;
   padding: 9px 12px;
   margin-bottom: 10px;
-  border: 2px solid #333;
-  border-radius: 4px;
+  border: none;
   font-size: 16px;
 }
 input[type="submit"] {
   width: 100%;
   padding: 18px 30px;
-  background: #333;
+  background: #3C5FDA;
   color: #fff;
   border: none;
   /* background: #ffffff; */
-  border: 2px solid #fff;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
   transition: .2s;
+  border-radius: 0;
+  box-shadow: 5px 5px 0px black;
+
 }
 input[type="submit"]:hover {
   transform: translateY(-2px);
+  box-shadow: 10px 10px 0px black;
   transition: .2s;
 }
 textarea {
   width: 100%;
   resize: none;
   height: 150px;
-  border: 2px solid #333;
-  border-radius: 4px;
+  border: none;
   margin-bottom: 10px;
   box-sizing: border-box;
   padding: 9px 12px;
@@ -159,9 +164,11 @@ textarea {
 .episode {
   background: #fff;
   color: #333;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 20px;
+  /* border-radius: 4px; */
   margin-top: 20px;
+  /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
+  box-shadow: 10px 10px 0px black;
 }
 .episode h4 {
   margin: 0;
@@ -173,4 +180,15 @@ textarea {
 }
 .episode p {
   font-size: 12px;
+}
+.episode-listen {
+  padding: 18px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: #34A1FC;
+  color: #ffffff;
+  margin-left: 10px;
+  display: inline-block;
+  background: #3C5FDA;
 }
