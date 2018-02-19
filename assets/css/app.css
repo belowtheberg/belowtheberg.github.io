@@ -1,13 +1,16 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
 }
 .flex {display: flex}
 .col-flex {display: flex}
 .v-center {align-items: center;}
 .h-center {justify-content: center;}
 h1 { font-size: 45px; }
+h2 { margin: 0 }
 .text-right {text-align: right;}
 .text-center {text-align: center;}
+.padding {padding: 10px}
 button {
   padding: 18px 30px;
   font-size: 16px;
@@ -43,6 +46,12 @@ button:hover {
 p {
   font-size: 16px;
   line-height: 1.6em;
+}
+.dark {
+  background: #333;
+  color: #fff;
+  padding: 50px 0;
+  margin: 50px 0;
 }
 /* COLUMNS */
 .col-1 {
@@ -109,7 +118,7 @@ input[type="submit"] {
   color: #fff;
   border: none;
   /* background: #ffffff; */
-  /* border: 2px solid #333; */
+  border: 2px solid #fff;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
@@ -146,4 +155,22 @@ textarea {
   h1 {
     font-size: 30px;
   }
+}
+.episode {
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.episode h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.episode h5 {
+  margin: 0;
+  font-weight: normal;
+}
+.episode p {
+  font-size: 12px;
 }
