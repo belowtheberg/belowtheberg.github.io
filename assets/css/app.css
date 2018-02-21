@@ -10,7 +10,7 @@ h1 { font-size: 45px; }
 h2 { margin: 0 }
 .text-right {text-align: right;}
 .text-center {text-align: center;}
-.padding {padding: 10px}
+.padding {padding: 10px; box-sizing: border-box;}
 button {
   padding: 18px 30px;
   font-size: 16px;
@@ -56,6 +56,26 @@ p {
   color: #394767;
   padding: 75px 0;
   margin: 75px 0;
+}
+.host {
+  width: 100%;
+  padding-top: 100%;
+  background: red;
+  box-sizing: border-box;
+  /* border: 5px solid #D6DBEA; */
+  /* box-shadow: 5px 5px 0 black; */
+}
+.host#brad {
+  background: url('../img/brad.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+.host#evan {
+  background: url('../img/evan.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
 }
 /* COLUMNS */
 .col-1 {
