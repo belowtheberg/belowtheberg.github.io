@@ -21,6 +21,7 @@ button {
   margin-left: 10px;
   box-shadow: 5px 5px 0px black;
   transition: .2s;
+  margin-bottom: 10px;
 }
 button:hover {
   background: #2576ba;
@@ -171,6 +172,9 @@ textarea {
   }
   .col-flex {
     display: block;
+  }
+  .col-4 {
+    width: 100%;
   }
   h1 {
     font-size: 35px;
