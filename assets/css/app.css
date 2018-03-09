@@ -167,6 +167,9 @@ textarea {
   font-family: 'Helvetica Neue', sans-serif;
 }
 @media (max-width: 590px) {
+  .col-9 {
+    width: 100%;
+  }
   .col-8 {
     width: 100%;
   }
@@ -174,6 +177,9 @@ textarea {
     display: block;
   }
   .col-4 {
+    width: 100%;
+  }
+  .col-3 {
     width: 100%;
   }
   h1 {
@@ -189,10 +195,12 @@ textarea {
   background: #fff;
   color: #333;
   padding: 20px;
-  /* border-radius: 4px; */
   margin-top: 20px;
-  /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
   box-shadow: 10px 10px 0px black;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 70px;
+  position: relative;
 }
 .episode h4 {
   margin: 0;
@@ -210,9 +218,15 @@ textarea {
   font-size: 16px;
   font-weight: bold;
   border: none;
-  background: #34A1FC;
   color: #ffffff;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   display: inline-block;
   background: #3C5FDA;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.episode-listen:hover {
+  background: #4366e0;
 }
