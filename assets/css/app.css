@@ -23,7 +23,7 @@ button {
   border: none;
   background: #34A1FC;
   color: #ffffff;
-  margin-left: 10px;
+  margin-right: 10px;
   box-shadow: 5px 5px 0px black;
   transition: .2s;
   margin-bottom: 10px;
@@ -198,6 +198,9 @@ textarea {
   h1 {
     font-size: 30px;
   }
+  .mobile-hide {
+    display: none;
+  }
 }
 .episode {
   background: #fff;
@@ -209,7 +212,6 @@ textarea {
   position: relative;
   margin: 0 auto;
   margin-bottom: 20px;
-
 }
 .episode h4 {
   margin: 0;
