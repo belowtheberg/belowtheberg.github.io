@@ -203,13 +203,12 @@ textarea {
   background: #fff;
   color: #333;
   padding: 20px;
-  box-shadow: 10px 10px 0px black;
-  /* margin-left: 10px;
-  margin-right: 10px; */
+  border: 2px solid black;
+  border-radius: 4px;
   padding-bottom: 70px;
   position: relative;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-bottom: 20px;
 
 }
 .episode h4 {
@@ -229,7 +228,6 @@ textarea {
   font-weight: bold;
   border: none;
   color: #ffffff;
-  /* margin-left: 10px; */
   display: inline-block;
   background: #3C5FDA;
   position: absolute;
