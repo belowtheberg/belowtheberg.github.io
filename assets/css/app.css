@@ -6,8 +6,13 @@ body {
 .col-flex {display: flex}
 .v-center {align-items: center;}
 .h-center {justify-content: center;}
-h1 { font-size: 45px; }
-h2 { margin: 0 }
+h1 {
+  font-size: 54px;
+  margin: 0;
+}
+header {
+  padding: 50px 0;
+}
 .text-right {text-align: right;}
 .text-center {text-align: center;}
 .padding {padding: 10px; box-sizing: border-box;}
@@ -45,7 +50,8 @@ button:hover {
 .max-width {
   max-width: 993px;
   margin: 0 auto;
-	padding: 0 16px;
+	padding-left: 16px;
+	padding-right: 16px;
   box-sizing: border-box;
 }
 p {
@@ -56,7 +62,9 @@ p {
   background: #D6DBEA;
   color: #394767;
   padding: 75px 0;
-  margin: 75px 0;
+}
+.about {
+  padding: 50px 0;
 }
 .host {
   width: 100%;
@@ -124,7 +132,7 @@ p {
   box-sizing: border-box;
 }
 .col-12 {
-  width: calc(100% / 12);
+  width: calc(100% / (12/12));
   box-sizing: border-box;
 }
 input[type="text"],input[type="email"] {
@@ -195,12 +203,14 @@ textarea {
   background: #fff;
   color: #333;
   padding: 20px;
-  margin-top: 20px;
   box-shadow: 10px 10px 0px black;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   padding-bottom: 70px;
   position: relative;
+  margin: 0 auto;
+  margin-top: 40px;
+
 }
 .episode h4 {
   margin: 0;
