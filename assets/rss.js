@@ -20,7 +20,7 @@ function month(m) {
 if (window.location.pathname === '/') {
   get(RSS_URL).then((data) => {
     const div = document.getElementById('episodes');
-    for(let i = 0; i < 4; i++) {
+    for(let i = 0; i < 3; i++) {
       let a = data.items[i];
       let d = new Date(a.pubDate);
       let html = `<div class='episode col-12'><h4>${a.title}</h4><h5>${month(d.getMonth())} ${d.getDate()}, ${d.getFullYear()}</h5><p>${a.description}</p><a href='${a.link}'><div class='episode-listen'>Listen</div></a></div>`
