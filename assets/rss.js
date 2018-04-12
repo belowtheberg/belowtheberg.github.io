@@ -29,7 +29,7 @@ if (window.location.pathname === '/') {
   });
 }
 
-if (window.location.pathname === '/episodes/') {
+if (window.location.pathname === '/episodes/' || window.location.pathname === '/episodes/index.html') {
   get(RSS_URL).then((data) => {
     const div = document.getElementById('episodes');
     for(let i = 0; i < data.items.length; i++) {
